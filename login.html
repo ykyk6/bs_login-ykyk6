@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <title></title>
+    <style>
+      html,
+      body {
+        width: 100vw;
+        height: 100vh;
+      }
+      .container {
+        margin-bottom: 2rem;
+      }
+      .bg1 {
+        background: url("https://picsum.photos/id/287/1920/1080?random=1");
+      }
+      .user {
+        position: absolute;
+        top: 37%;
+        left: 15%;
+      }
+      .fa-user {
+        position: absolute;
+        top: -6%;
+        left: 50%;
+        font-size: 45px;
+        color: white;
+        transform: translate(-50%,0);
+      }
+      .lock {
+        position: absolute;
+        top: 49%;
+        left: 15%;
+      }
+      .card {
+        background: rgba(247, 246, 246, 0.8);
+      }
+      .rounded-circle {
+        width: 25%;
+        height: 25%;
+        position: absolute;
+        left: 50%;
+        top: -13%;
+        transform: translate(-50%,0);
+        opacity: 70%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid w-100 h-100 d-flex justify-content-center align-items-center bg1">
+      <div class="row w-25 h-50 border border-success card pb-5">
+        <div class="rounded-circle bg-success"></div>
+        <div class="w-100 h-25">
+          <div class="card-body h1 d-flex justify-content-center mt-4 text-success">Sign In</div>
+        </div>
+        <!--  -->
+        <div class="user"></div>
+        <div class="user2 bg-warning"><i class="far fa-user"></i></div>
+        <div class="lock"></div>
+
+        <div class="w-100 h-75">
+          <div class="d-flex w-100 h-100 justify-content-center mt-5 mb-5">
+            <form class="w-75">
+              <div class="form-group pb-2"><input type="text" class="form-control" id="formGroupExampleInput" placeholder=" Username" /></div>
+              <div class="form-group">
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder=" Password" />
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-success container-fluid mt-2">Login</button>
+              </div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="custom-control custom-checkbox mt-3 custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1" />
+                  <label class="custom-control-label text-success" for="customCheck1">Rember me</label>
+                </div>
+                <div class="custom-control-inline mt-4">
+                  <label class="text-success" for="customRadioInline2 ">Forget Password?</label>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
